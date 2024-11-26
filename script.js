@@ -122,6 +122,7 @@ let audio = document.getElementById('audio');
 let music = document.getElementById('music');
 
 audio.onclick = function (){
+  document.documentElement.requestFullscreen();
   if(music.paused){
     music.play();
   }
